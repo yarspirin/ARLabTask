@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="HeF-g8-ky3">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="glf-K5-o5R">
+            <objects>
+                <viewController id="HeF-g8-ky3" customClass="ViewController" customModule="ARLabTask" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qXz-dv-8bh">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AjU-dC-BpB">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </arscnView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="b0i-Pq-Mmj">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="65"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.51875535100000003" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="65" id="yGr-3s-REl"/>
+                                </constraints>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="contactAdd" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xFz-2U-GEI">
+                                <rect key="frame" x="176.5" y="322.5" width="22" height="22"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="AjU-dC-BpB" firstAttribute="leading" secondItem="gPJ-Za-4FK" secondAttribute="leading" id="0ON-3f-jut"/>
+                            <constraint firstItem="b0i-Pq-Mmj" firstAttribute="leading" secondItem="gPJ-Za-4FK" secondAttribute="leading" id="6DA-7K-XfV"/>
+                            <constraint firstItem="AjU-dC-BpB" firstAttribute="trailing" secondItem="gPJ-Za-4FK" secondAttribute="trailing" id="BaX-Hh-vX2"/>
+                            <constraint firstItem="b0i-Pq-Mmj" firstAttribute="top" secondItem="qXz-dv-8bh" secondAttribute="top" id="PVZ-oq-OcK"/>
+                            <constraint firstItem="b0i-Pq-Mmj" firstAttribute="trailing" secondItem="gPJ-Za-4FK" secondAttribute="trailing" id="Sa4-uW-n5G"/>
+                            <constraint firstItem="AjU-dC-BpB" firstAttribute="bottom" secondItem="gPJ-Za-4FK" secondAttribute="bottom" id="hMz-Tw-3wb"/>
+                            <constraint firstItem="AjU-dC-BpB" firstAttribute="top" secondItem="qXz-dv-8bh" secondAttribute="top" id="mqI-ej-FV7"/>
+                            <constraint firstItem="xFz-2U-GEI" firstAttribute="centerX" secondItem="qXz-dv-8bh" secondAttribute="centerX" id="qfA-Mn-d4p"/>
+                            <constraint firstItem="xFz-2U-GEI" firstAttribute="centerY" secondItem="qXz-dv-8bh" secondAttribute="centerY" id="sBq-ly-xtd"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="gPJ-Za-4FK"/>
+                    </view>
+                    <connections>
+                        <outlet property="debugTextView" destination="b0i-Pq-Mmj" id="oJr-Fa-vRj"/>
+                        <outlet property="sceneView" destination="AjU-dC-BpB" id="B0J-O7-qa3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Y4l-E6-TO9" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="140" y="137.18140929535232"/>
+        </scene>
+    </scenes>
+</document>
